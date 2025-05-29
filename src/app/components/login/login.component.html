@@ -4,7 +4,8 @@
       class="login-icon"
       aria-hidden="false"
       aria-label="login icon"
-      fontIcon="account_circle">
+      fontIcon="account_circle"
+    >
     </mat-icon>
     <h1>Inicio de sesión</h1>
   </mat-card-header>
@@ -15,16 +16,31 @@
         <mat-label>Ingrese su E-mail</mat-label>
         <input matInput placeholder="Ex. rafaelargotez@gmail.com" value="" />
       </mat-form-field>
-      
+
       <mat-form-field class="input-form">
-        <mat-label>Ingrese su Password</mat-label>
-        <input matInput type="password" placeholder="Password" value="" />
+        <mat-label>Ingrese su Contraseña</mat-label>
+        <input matInput type="password" placeholder="Contraseña" value="" />
       </mat-form-field>
     </form>
+    <mat-card-actions>
+      <button matButton="elevated" class="btn-ingresar">
+         <span style="color: rgba(49, 48, 48, 0.785)"
+      >Iniciar sesión</span
+    >
+      </button>
+    </mat-card-actions>
+    <div class="divider">
+      <span>o</span>
+    </div>
   </mat-card-content>
-
-  <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions>
+  <button matButton="elevated" class="google-login-btn">
+    <img
+      src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+      alt="Google logo"
+      class="google-icon"
+    />
+    <span style="color: rgba(49, 48, 48, 0.785)"
+      >Iniciar sesión con Google</span
+    >
+  </button>
 </mat-card>
