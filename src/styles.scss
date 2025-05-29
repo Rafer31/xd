@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
 html, body {
   height: 100%;
   margin: 0;
@@ -7,3 +7,14 @@ html, body {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html {
+    color-scheme: light;
+  @include mat.theme((
+    color: (
+      primary: mat.$orange-palette,
+      tertiary: mat.$blue-palette
+    ),
+    typography: Roboto,
+    density: -2,
+  ));
+}
