@@ -27,8 +27,8 @@
     background-size: cover;
     background-position: center bottom;
     background-repeat: no-repeat;
-    filter: blur(0.75px);
-    transform: scale(1.02);
+    filter: blur(9px);
+    transform: scale(1.15);
   }
 
   h1 {
@@ -57,7 +57,7 @@
   justify-content: center;
   align-items: start;
   z-index: 1;
-  padding: 140px 0 0 40px;
+  padding: 100px 0 0 40px;
   box-sizing: border-box;
 }
 @media (max-width: 720px) {
