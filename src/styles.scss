@@ -2,7 +2,7 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.dev/guide/theming
 @use '@angular/material' as mat;
-
+@use '../theme-colors' as colors;
 html {
   @include mat.theme((
     color: (
@@ -12,6 +12,15 @@ html {
     ),
     typography: Roboto,
     density: 0,
+  ));
+}
+.list-button {
+  @include mat.theme((
+    color: (
+      theme-type: light,
+      primary: colors.$primary-palette,
+
+    )
   ));
 }
 html, body { height: 100%; }

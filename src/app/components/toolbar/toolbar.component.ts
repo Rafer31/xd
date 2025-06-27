@@ -11,21 +11,4 @@ import { Router } from '@angular/router';
   styleUrl: './toolbar.component.scss'
 })
 export class ToolbarComponent {
-  router = inject(Router)
-  activeLink = signal('')
-  constructor(router: Router){
-  
-  }
-
-  toggleMenu() {
-    const nav = document.querySelector('.nav-links');
-    nav?.classList.toggle('open');
-  }
-
-  goTo(route: string, event: Event) {
-    event.preventDefault();
-    this.activeLink.set(route);
-    this.router.navigate([`admin-dashboard/${route}`]);
-  }
-  
 }

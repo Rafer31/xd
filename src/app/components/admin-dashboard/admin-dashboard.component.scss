@@ -1,0 +1,49 @@
+.dashboard-container {
+  height: 100vh;
+  width: 100vw;
+  border: 1px solid #555;
+  background: #eee;
+}
+.sidenav {
+  background-color: #03034b;
+  color: white;
+  padding: 10px 30px 0 0;
+  font-weight: bold;
+  border-radius: 0 50px 50px 0;
+  width: 22vw;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.logo {
+  max-width: 100px;
+  max-height: 100px;
+}
+.content{
+  margin-left: 25px;
+}
+.list-content{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style:none;
+}
+.list-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  width: 15vw;
+  --mat-sys-primary: #ffffff;
+}
+.content-container{
+  background-color: black;
+  width: 77.50vw;
+  height: 99vh;
+  border-radius: 100px 0 0 30px;
+  margin: auto;
+}
